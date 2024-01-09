@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Quicksand', 'sans-serif'],
+    }
   },
   plugins: [],
 }
