@@ -9,7 +9,7 @@ function Header() {
     <>
     <header className="" >
       <div className="">
-      <nav className="flex items-center justify-between md:px-20 py-3 px-5">
+      <nav className="bg-gray-800 drop-shadow-2xl flex items-center justify-between md:px-20 py-3 px-5">
        <div className="">
        <Link to='/' smooth={true} spy={true} duration={500} >
        <img src={logo} alt="logo" className=''/>
