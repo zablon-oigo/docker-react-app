@@ -16,7 +16,7 @@ function Header() {
        </Link>
       
        </div>
-       <div className="">
+       <div className="md:block hidden">
         <Navbar/>
        </div>
 
