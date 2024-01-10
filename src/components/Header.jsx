@@ -1,9 +1,17 @@
-import React from 'react'
+import {useState,React }from 'react'
 import logo from '../assets/images/logo.png'
 import {Link} from 'react-router-dom'
 import Navbar from './Navbar'
-
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { LiaTimesSolid } from "react-icons/lia";
 function Header() {
+  const[menu,setMenu]=useState(false)
+  const toggleMenu=()=>{
+    setMenu(!menu)
+  }
+  const closeMenu=()=>{
+    setMenu(false)
+  }
 
   return (
     <>
@@ -19,6 +27,11 @@ function Header() {
        <div className="md:block hidden">
         <Navbar/>
        </div>
+       <button className="md:hidden block" onClick={toggleMenu}>
+        {menu?<LiaTimesSolid  className='text-4xl text-amber-500'/> :<HiMiniBars3BottomRight className='text-4xl text-amber-500'/>}
+       
+       
+       </button>
 
     </nav>
       </div>
