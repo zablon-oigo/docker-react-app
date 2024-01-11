@@ -7,7 +7,7 @@ function Services() {
   return (
     <>
        <div className="min-h-screen bg-gradient-to-r from-amber-50 to-yellow-50  md:px-20 px-6 py-10">
-        <div className="flex md:flex-row-reverse  flex-col-reverse items-center justify-between gap-10">
+        <div className="my-20 flex md:flex-row-reverse  flex-col-reverse items-center justify-between gap-10">
             <div className="w-full md:w-1/2">
                 <img src={puppies} alt="" className="" />
               
@@ -24,7 +24,7 @@ function Services() {
                 </div>
             </div>
         </div>
-       <div className="">
+       <div className="my-20">
        <ReviewsCard/>
        </div>
        </div>
