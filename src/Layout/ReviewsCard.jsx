@@ -53,11 +53,11 @@ function ReviewsCard() {
 
   return (
        <>
-    <div className=" grid grid-cols-1 md:grid-cols-3 gap-y-14 gap-x-6">
+    <div className=" grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-6">
       {card.map((item) => (
         <div className="group hover:scale-105 transition-transform duration-500 translate-y-2" key={item.id}>
         <div className=""data-aos='fade-up' data-aos-duration='1500' data-easing='linear'>
-        <img src={item.image} alt="" className="rounded-t-xl object-cover object-center h-[200px] w-[400px]" />
+        <img src={item.image} alt="" className="rounded-t-xl" />
            <div className="px-4 shadow-xl group-hover:bg-amber-500 bg-white rounded-b-xl  flex flex-col itmes-center gap-2">
             
            <h2 className="text-xl font-semibold group-hover:text-white text-gray-700 capitalize mt-3">{item.title}</h2>
