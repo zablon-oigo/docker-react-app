@@ -1,14 +1,17 @@
 import React from 'react'
+import TestimonialCard from '../../Layout/TestimonialCard'
 
 const Testimonial = () => {
   return (
     <>
-    <div className="md:px-20 px-6 py-10 bg-gray-100 min-h-[60vh] bg-gradient-to-br from-amber-100 to-yellow-50">
-        <h2 className="text-3xl text-center font-white">testimonial</h2>
-        <h2 className="md:text-6xl text-3xl text-center  font-extrabold text-amber-500 uppercase  ">happy faces</h2>
-        <p className="font-light md:text-xl text-lg text-center  mb-2 leading-tight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum suscipit alias, reiciendis qui assumenda totam. Inventore quo fugiat sapiente?
-        </p>
+    <div className="md:px-10 px-6 py-10 bg-gray-100 min-h-[50vh] bg-gradient-to-br from-amber-100 to-yellow-50">
+        <h2 className="text-3xl text-center text-amber-400">testimonial</h2>
+        <h2 className="md:text-5xl text-3xl text-center  font-bold text-amber-400 capitalize  ">happy faces</h2>
+
+        <div className="">
+          <TestimonialCard/>
+        </div>
+      
     </div>
     </>
   )

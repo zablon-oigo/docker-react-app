@@ -4,6 +4,8 @@ import About from './home/About'
 import Location from './home/Location'
 import Reviews from './home/Reviews'
 import Services from './home/Services'
+import Testimonial from './home/Testimonial'
+
 function Home() {
 
   return (
@@ -13,7 +15,8 @@ function Home() {
     <Location/>
     <Reviews/>
     <Services/>
-   
+    <Testimonial/>
+
 
     </>
   )
