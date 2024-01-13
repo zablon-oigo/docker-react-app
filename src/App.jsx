@@ -4,6 +4,9 @@ import NavabarLayout from "./Layout/NavabarLayout"
 import Home from "./components/Home"
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Services from "./components/Services"
 
 
 function App() {
@@ -14,9 +17,9 @@ function App() {
       <Route path="/" element={<NavabarLayout/>} >
 
         <Route index element={<Home/>} />
-        <Route path="about" element={<h1>About</h1>} />
-        <Route path="contact" element={<h1>Contact</h1>} />
-        <Route path="services" element={<h1>services</h1>} />
+        <Route path="about" element={<About/>} />
+        <Route path="contact" element={<Contact/>} />
+        <Route path="services" element={<Services/>} />
         <Route path='*' element={<NotFound/>} />
         </Route>
 
