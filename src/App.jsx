@@ -1,8 +1,6 @@
 import { BrowserRouter, Outlet,Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
 import NavabarLayout from "./Layout/NavabarLayout"
 import Home from "./components/Home"
-import Footer from "./components/Footer"
 import NotFound from "./components/NotFound"
 import About from "./components/About"
 import Contact from "./components/Contact"
