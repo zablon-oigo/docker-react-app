@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import pawImage from '../assets/images/paw.jpg';
 import foundersImage from '../assets/images/founders.jpg';
 import team1Image from '../assets/images/team1.jpg';
@@ -6,6 +8,9 @@ import team2Image from '../assets/images/team2.jpg';
 import team3Image from '../assets/images/team3.jpg';
 
 function About() {
+  useEffect(() => {
+    AOS.init();
+ }, []);
   return (
     <>
       <div className="min-h-[90vh] bg-gradient-to-br from-yellow-50 to-amber-100">
@@ -14,7 +19,7 @@ function About() {
             Explore Our Pet-Centric World
           </h2>
           <div className="flex md:flex-row-reverse flex-col-reverse items-center justify-between">
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-2/3" data-aos='fade-left' data-aos-easing="linear" data-aos-duration="1500">
               <img src={pawImage} alt="" className="rounded-xl" />
             </div>
             <div className="w-full md:w-1/3">
@@ -26,10 +31,10 @@ function About() {
             </div>
           </div>
           <div className="my-10 flex md:flex-row flex-col-reverse gap-x-6 items-center justify-between">
-            <div className="w-full md:w-2/4">
+            <div className="w-full md:w-2/4" data-aos='fade-right' data-aos-easing="linear" data-aos-duration="1500">
               <img src={foundersImage} alt="" className="rounded-xl" />
             </div>
-            <div className="mb-2 w-full md:w-1/2">
+            <div className="mb-2 w-full md:w-1/2" data-aos='fade-left' data-aos-easing="linear" data-aos-duration="1500" >
               <h2 className="md:text-4xl text-3xl text-center md:text-start font-semibold text-amber-600">
                 Greetings! Meet the Visionaries 🐾
               </h2>
@@ -43,10 +48,10 @@ function About() {
           </h2>
           {/* Team Member 1 */}
           <div className="my-10 flex md:flex-row flex-col-reverse items-center justify-between">
-            <div className="w-full md:w-2/4">
+            <div className="w-full md:w-2/4" data-aos='fade-right' data-aos-easing="linear" data-aos-duration="1500">
               <img src={team1Image} alt="" className="rounded-xl" />
             </div>
-            <div className="w-full md:w-2/5">
+            <div className="w-full md:w-2/5" data-aos='fade-left' data-aos-easing="linear" data-aos-duration="1500">
               <h2 className="text-2xl font-semibold text-amber-700 mb-4">
                 Rocky Thunderpaws
               </h2>
@@ -60,10 +65,10 @@ function About() {
           </div>
           {/* Team Member 2 */}
           <div className="my-10 flex md:flex-row-reverse flex-col-reverse items-center justify-between">
-            <div className="w-full md:w-2/4">
+            <div className="w-full md:w-2/4"data-aos='fade-left' data-aos-easing="linear" data-aos-duration="1500">
               <img src={team2Image} alt="" className="rounded-xl" />
             </div>
-            <div className="w-full md:w-2/5">
+            <div className="w-full md:w-2/5" data-aos='fade-right' data-aos-easing="linear" data-aos-duration="1500">
               <h2 className="text-2xl font-semibold text-amber-700 mb-4">
                 Ziggy Stardustpaw
               </h2>
@@ -77,11 +82,11 @@ function About() {
           </div>
           {/* Team Member 3 */}
           <div className="my-10 flex md:flex-row flex-col-reverse items-center justify-between">
-            <div className="w-full md:w-2/4">
+            <div className="w-full md:w-2/4" data-aos='fade-right' data-aos-easing="linear" data-aos-duration="1500">
               <img src={team3Image} alt="" className="rounded-xl" />
             </div>
-            <div className="w-full md:w-2/5">
-              <h2 className="text-2xl font-semibold text-amber-700 mb-4">
+            <div className="w-full md:w-2/5" data-aos='fade-left' data-aos-easing="linear" data-aos-duration="1500">
+              <h2 className="text-2xl font-semibold text-amber-700 mb-4" >
               Aurora Sparkleheart
               </h2>
               <p className="text-amber-900 text-md font-light">
