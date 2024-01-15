@@ -28,6 +28,8 @@ To Dockerize a React application, follow these general steps:
 
    # Copy package.json and package-lock.json to the working directory
    COPY package*.json ./
+   # Copy tailwind.config and postcss.config file from the build context into the current working directory of the Docker image.
+   COPY tailwind.config.js  postcss.config.js ./
 
    # Install app dependencies
    RUN npm install
@@ -36,7 +38,7 @@ To Dockerize a React application, follow these general steps:
    COPY . .
 
    # Expose the port the app runs on
-   EXPOSE 3000
+   EXPOSE 5173
 
    # Define the command to run your app
    CMD ["npm", "start"]
@@ -53,10 +55,10 @@ To Dockerize a React application, follow these general steps:
    Once the image is built, you can run a container based on that image.
 
    ```bash
-   docker run -p 3000:3000 your-image-name
+   docker run -p 5173:5173 your-image-name
    ```
 
-   This will start your React application inside a Docker container, and you can access it at http://localhost:3000.
+   This will start your React application inside a Docker container, and you can access it at http://localhost:5173.
 
 ## Tech Stack
 
