@@ -15,34 +15,31 @@ Docker is an open-source project that streamlines the deployment of software app
 ## Demo
 
 To Dockerize a React application, follow these general steps:
+```
+# set the base image to create the image for the React app
+FROM node:20-alpine
 
-1. **Create a Dockerfile:**
-   Create a Dockerfile in the root of your React project. Specify a base image, copy the necessary files, and define any dependencies.
+# Set the working directory
+WORKDIR /app
 
-   ```Dockerfile
-   # Use an official Node runtime as a parent image
-   FROM node:14
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
 
-   # Set the working directory
-   WORKDIR /usr/src/app
+# Copy tailwind.config and postcss.config files from the build context into the current working directory of the Docker image.
+COPY tailwind.config.js postcss.config.js ./
 
-   # Copy package.json and package-lock.json to the working directory
-   COPY package*.json ./
-   # Copy tailwind.config and postcss.config file from the build context into the current working directory of the Docker image.
-   COPY tailwind.config.js  postcss.config.js ./
+# Install app dependencies
+RUN npm install
 
-   # Install app dependencies
-   RUN npm install
+# Copy the application code into the container
+COPY . .
 
-   # Copy the application code into the container
-   COPY . .
+# Expose the port the app runs on
+EXPOSE 5173
 
-   # Expose the port the app runs on
-   EXPOSE 5173
-
-   # Define the command to run your app
-   CMD ["npm", "start"]
-   ```
+# Command to run the app
+CMD npm run dev
+```
 
 2. **Build the Docker Image:**
    Run the following command in the same directory as your Dockerfile to build the Docker image.
