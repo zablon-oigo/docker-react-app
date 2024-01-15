@@ -77,8 +77,8 @@ To dockerize your React application, follow the steps outlined in the demo secti
 
 2. **Run the Docker Container:**
    ```bash
-   docker run -p 3000:3000 your-image-name
+   docker run -p 5173:5173 your-image-name
    ```
 
-   Access your Dockerized React application at http://localhost:3000.
+   Access your Dockerized React application at http://localhost:5173.
 
