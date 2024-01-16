@@ -64,11 +64,11 @@ CMD npm run dev
 **Client:** React, TailwindCSS
 
 ## Project Demo
-[woofs&purrs]()
+[woofs&purrs](https://pet-ruby.vercel.app/)
 ## Image Credits
-[pixabay](https://pixabay.com/)
-[unsplash](https://unsplash.com/)
-[freepik](https://www.freepik.com/)
+- [pixabay](https://pixabay.com/)
+- [unsplash](https://unsplash.com/)
+- [freepik](https://www.freepik.com/)
 
 ## README
 
