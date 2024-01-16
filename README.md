@@ -63,6 +63,13 @@ CMD npm run dev
 
 **Client:** React, TailwindCSS
 
+## Project Demo
+[woofs&purrs]()
+## Image Credits
+[pixabay](https://pixabay.com/)
+[unsplash](https://unsplash.com/)
+[freepik](https://www.freepik.com/)
+
 ## README
 
 ### Dockerizing Your React Application
