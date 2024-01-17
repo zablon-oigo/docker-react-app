@@ -28,6 +28,10 @@ Docker is an open-source project that streamlines the deployment of software app
 ## Demo
 
 To Dockerize a React application, follow these general steps:
+
+- Create a Dockerfile in the root directory of your project
+ 
+ - Add the code below 
 ```
 # set the base image to create the image for the React app
 FROM node:20-alpine
