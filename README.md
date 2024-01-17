@@ -17,6 +17,14 @@ Docker is an open-source project that streamlines the deployment of software app
 
 - **Docker Compose File** is a tool for defining and managing multi-container Docker applications. A Docker Compose file is a YAML (Yet Another Markup Language) file specifying an application's services, networks, and volumes. It allows developers to define the entire application stack, including its dependencies, services, and configurations in a single file. With a Docker Compose file, you can easily spin up and manage complex applications with multiple interconnected containers.
 
+## What is Docker Good For ?
+
+- **Packaging Software** You can build your image and be sure that it can run in any modern Linux machine
+
+- **Reduce Debugging Overhead** You might have probably experienced countless bugs about a broken library, or an update gone wrong. Docker allows you to state clearly the steps for debugging a problem on a system with known properties making debugging and environment reproduction much simpler
+
+- **Replace Virtual Machines** Docker can be used to replace the VMs if you only care about the application and not the operating system . Docker is also faster than VM to spin up and it's more lightweight to move around making it easy to share the filesystem.
+
 ## Demo
 
 To Dockerize a React application, follow these general steps:
