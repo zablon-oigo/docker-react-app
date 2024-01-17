@@ -3,7 +3,7 @@
 ## What is Docker?
 
 Docker is an open-source project that streamlines the deployment of software applications inside containers. It provides an additional layer of abstraction and automates OS-level virtualization on Linux.
-In simpler terms, Docker is a platform that enables you to build, ship, and run applications consistently across various environments. It has become a standard way of addressing challenges in software deployment, offering a portable and scalable solution.
+**In simpler terms, Docker is a platform that enables you to build, ship, and run applications consistently across various environments. It has become a standard way of addressing challenges in software deployment, offering a portable and scalable solution.**
 
 ## Terminology
 
@@ -11,8 +11,11 @@ In simpler terms, Docker is a platform that enables you to build, ship, and run 
 
 - **Image:** A read-only template that contains a set of instructions for creating a container. Images are used to create containers, and they can be shared and reused.
 
-- **Dockerfile:** A text file that contains a set of instructions for building a Docker image. It defines the environment inside the container, such as the base image, dependencies, and configuration.
-- **Atomic Host** is a small finely tuned OS image , Like Fedora Core OS that supports Container hosting and Atomic OS upgrades
+- **Dockerfile:** A text file containing instructions for building a Docker image. It defines the environment inside the container, such as the base image, dependencies, and configuration.
+
+- **Atomic Host** is a small finely tuned OS image, Like Fedora Core OS that supports Container hosting and Atomic OS upgrades
+
+- **Docker Compose File** is a tool for defining and managing multi-container Docker applications. A Docker Compose file is a YAML (Yet Another Markup Language) file specifying an application's services, networks, and volumes. It allows developers to define the entire application stack, including its dependencies, services, and configurations in a single file. With a Docker Compose file, you can easily spin up and manage complex applications with multiple interconnected containers.
 
 ## Demo
 
