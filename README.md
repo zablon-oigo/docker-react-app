@@ -17,23 +17,23 @@ Docker is an open-source project that streamlines the deployment of software app
 
 - **Docker Compose File** is a tool for defining and managing multi-container Docker applications. A Docker Compose file is a YAML (Yet Another Markup Language) file specifying an application's services, networks, and volumes. It allows developers to define the entire application stack, including its dependencies, services, and configurations in a single file. With a Docker Compose file, you can easily spin up and manage complex applications with multiple interconnected containers.
 
-## What is Docker Good For ?
+## What is Docker Good For?
 
-- **Packaging Software** You can build your image and be sure that it can run in any modern Linux machine
+- **Packaging Software** You can build your image and be sure that it can run on any modern Linux machine
 
 - **Reduce Debugging Overhead** You might have probably experienced countless bugs about a broken library, or an update gone wrong. Docker allows you to state clearly the steps for debugging a problem on a system with known properties making debugging and environment reproduction much simpler
 
-- **Replace Virtual Machines** Docker can be used to replace the VMs if you only care about the application and not the operating system . Docker is also faster than VM to spin up and it's more lightweight to move around making it easy to share the filesystem.
+- **Replace Virtual Machines** Docker can be used to replace the VMs if you only care about the application and not the operating system. Docker is also faster than VM to spin up and it's more lightweight to move around making it easy to share the filesystem.
 
 ## Demo
 
 To Dockerize a React application, follow these general steps:
 
-- Create a Dockerfile in the root directory of your project
+- Create a **Dockerfile**  in the root directory of your project
  
  - Add the code below 
 ```
-# set the base image to create the image for the React app
+# Set the base image to create the image for the React app
 FROM node:20-alpine
 
 # Set the working directory
@@ -73,6 +73,29 @@ CMD npm run dev
    ```
 
    This will start your React application inside a Docker container, and you can access it at http://localhost:5173.
+
+## Docker Compose
+
+[Docker Compose](https://docs.docker.com/compose/) is a tool for defining and managing multi-container Docker applications. It allows you to define the services, networks, and volumes for your application in a single `docker-compose.yml` file, making it easy to manage complex setups.
+
+### Using Docker Compose with Your React Application
+
+To use Docker Compose with your React application, follow these steps:
+
+1. Create a `docker-compose.yml` file in the root directory of your project.
+
+2. Add the following code to the `docker-compose.yml` file:
+
+   ```
+   version: '3'
+   services:
+     react-app:
+       build:
+         context: .
+         dockerfile: Dockerfile
+       ports:
+         - "5173:5173"
+
 
 ## Tech Stack
 
