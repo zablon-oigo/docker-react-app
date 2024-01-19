@@ -95,7 +95,19 @@ To use Docker Compose with your React application, follow these steps:
          dockerfile: Dockerfile
        ports:
          - "5173:5173"
+ ### This configuration defines a service named react-app based on the Dockerfile in the current context, and it maps port 5173 from the container to port 5173 on the host.
+1. **Save the `docker-compose.yml` file.**
 
+2. **Running Your Dockerized React Application with Docker Compose:**
+   ```bash
+   docker-compose up --build
+3. **Access Your React Application:**
+  Open your web browser and go to http://localhost:5173 to access your Dockerized React application.
+4. **Stopping the Containers:**
+When you're done, you can stop the running containers:
+```
+docker-compose down
+```
 
 ## Tech Stack
 
