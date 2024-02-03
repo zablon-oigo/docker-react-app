@@ -8,7 +8,7 @@ import { FaRegTimesCircle, FaBusinessTime } from "react-icons/fa";
 function Footer() {
   return (
     <>
-         <div className="bg-amber-50 min-h-[400px] md:px-20 px-5 py-10">
+         <div className="bg-amber-100 min-h-[400px] md:px-20 px-5 py-10">
             <div className="flex justify-between flex-col md:flex-row  gap-x-6 gap-y-4">
               <div className="w-full md:w-2/5">
                 <img src={logo} alt="" className="" />
