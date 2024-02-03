@@ -33,7 +33,7 @@ function Header() {
        </button>
 
     </nav>
-    <section className={`${menu?'translate-x-0':'-translate-x-full'} duration-500 transform transition-transform bg-white absolute top-[80px] right-0 w-full h-[400px] md:hidden block`}>
+    <section className={`${menu?'translate-x-0':'-translate-x-full'} z-10 duration-500 transform transition-transform bg-white absolute top-[80px] right-0 w-full h-[400px] md:hidden block`}>
     <div className="flex flex-col justify-start items-start w-full gap-6 my-6">
                   <div className="flex flex-col space-y-8 px-4 w-full">
                   <Link to="." className="text-3xl font-semibold border-b-2 border-gray-600 text-gray-700" onClick={closeMenu}>Home</Link>
